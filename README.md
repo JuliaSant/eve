@@ -4,7 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Rodar o servidor
 
-Rode `ng serve` para iniciar o servidor e acesse `http://localhost:4200/`.
+Rode `node server` para iniciar o servidor e acesse `http://localhost:4200/`.
+
+Ou acesse `https://eveco.herokuapp.com/`
 
 ## Further help
 
