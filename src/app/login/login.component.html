@@ -1,0 +1,63 @@
+<style>
+    body {
+      background-color: #f5f5f5;
+    }
+  
+    main {
+      width: 100% !important;
+      display: grid;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+    form {
+      padding: 5em;
+      margin-top: 1em;
+      width: 900px;
+      border-radius: 2em;
+      background-color: aliceblue;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+      .logo {
+        display: grid;
+        justify-content: center;
+      }
+  
+      .btn-green{
+        color: #fff;
+       background-color:  #016565
+      }
+      .btn-red{
+        color: #fff;
+        background-color:#c12f2f ;
+      }
+  </style>
+  <main class="form-signin">
+    <div [ngClass]="{'logo': true}" class="col-12 mt-5">
+      <img src="../assets/logo 2.PNG" alt="logo 2">
+    </div>
+    <div class="col-12">
+    <form>
+      <h1 class="h3 mb-3">Realize seu login!</h1>
+  
+      <div class="form-floating col-12">
+        <input type="email" class="form-control mb-3" id="floatingInput" placeholder="name@example.com">
+      </div>
+      <div class="form-floating col-12">
+        <input type="password" class="form-control mb-3" id="floatingPassword" placeholder="Senha">
+      </div>
+  
+      <div class="checkbox mb-3">
+       <select class="form-control" required>
+         <option>Funcionario</option>
+         <option>Dono</option>
+         <option>Convidado</option>
+       </select>
+      </div>
+      <button [routerLink]="[ './home']" [ngClass]="{'btn-green': true}" class="w-50 btn btn-lg mt-5" type="submit">Entrar</button>
+        <a [routerLink]="[ './cadastro']" [ngClass]="{'btn-red': true}" class="w-25 btn btn-lg mt-3" type="submit">Cadastrar</a>
+    </form>
+    </div>
+  </main>
+  

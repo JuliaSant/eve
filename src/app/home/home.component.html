@@ -1,0 +1,42 @@
+<style>
+    .home{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: aliceblue;
+        min-height: 900px;
+    }
+    .card {
+        height: 450px;
+    }
+</style>
+<app-header></app-header>
+<div [ngClass]="{'home': true}">
+    <div class="card m-5" style="width:400px">
+        <img class="card-img-top" src="../../assets/eventos.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Eventos</h4>
+          <p class="card-text">10 eventos criados</p>
+          <a [routerLink]="[ '../listaFunc']" class="btn btn-primary">Ver mais</a>
+        </div>
+      </div>
+    
+      <div class="card m-5" style="width:400px">
+        <img class="card-img-top" src="../../assets/convidar.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Convidados</h4>
+          <p class="card-text">100 convidados</p>
+          <a [routerLink]="[ '../listaFunc']" class="btn btn-primary">Ver mais</a>
+        </div>
+      </div>
+    
+      <div class="card m-5" style="width:400px">
+        <img class="card-img-top" src="../../assets/funcionarios.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Funcionarios</h4>
+          <p class="card-text">20 Funcionarios ativos</p>
+          <a  [routerLink]="[ '../listaFunc']" class="btn btn-primary">Ver mais</a>
+        </div>
+      </div>
+
+</div>
